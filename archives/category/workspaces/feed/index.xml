@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Workspaces &#8211; 五十の手習い　趣味のAWS</title>
+	<atom:link href="https://aws.morihiro.tokyo/archives/category/workspaces/feed" rel="self" type="application/rss+xml" />
+	<link>https://aws.morihiro.tokyo/</link>
+	<description>ITを、楽しもう</description>
+	<lastBuildDate>Fri, 23 Aug 2019 11:23:03 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+	<item>
+		<title>課金に関する後日談</title>
+		<link>https://aws.morihiro.tokyo/archives/156</link>
+				<pubDate>Sun, 09 Jun 2019 05:50:35 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[Workspaces]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=156</guid>
+				<description><![CDATA[前回、AWS Workplaceをつくってみたけれど課金がこわくてすぐ消しました、という話をしましたが、消した &#8230; <a href="https://aws.morihiro.tokyo/archives/156" class="more-link">続きを読む <span class="screen-reader-text">課金に関する後日談</span></a>]]></description>
+								<content:encoded><![CDATA[<p></p>
+<p><!--StartFragment--></p>
+
+
+<p>前回、AWS Workplaceをつくってみたけれど課金がこわくてすぐ消しました、という話をしましたが、消した翌日にAWSからメールが届きました。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-2-1024x555.png" alt="" class="wp-image-168" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-2-1024x555.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-2-300x163.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-2-768x416.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ちゃんと請求額の連絡が来るんですね。ちゃんとしてますね。ということで、メールの「Billing &amp; Cost Management Page」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-3-1024x555.png" alt="" class="wp-image-169" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-3-1024x555.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-3-300x163.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-3-768x416.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><br><br></figcaption></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-4-1024x555.png" alt="" class="wp-image-170" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-4-1024x555.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-4-300x163.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-04-4-768x416.png 768w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p class="has-large-font-size">えっ！ちょっと待ってくださいよ。なんで２６ドルも請求されているんですか！？！？</p>
+
+
+
+<p>内訳をレポートから読み取ってみると、やはり昨日作ってすぐ消したWorkSpacesに対する課金のようです。</p>
+
+
+
+<p>なんでこんなことになっちゃったの、ということで、あらためて料金表を確認してみます。</p>
+
+
+
+<p><a href="https://aws.amazon.com/jp/workspaces/pricing/">https://aws.amazon.com/jp/workspaces/pricing/</a></p>
+
+
+
+<p>確かに振り返ってみると、「Windowsバンドルオプションバリュー＄9.75／時間＋アプリケーションオプション月額$15＋従量」だからそりゃそのくらいはとられますわな。でもアプリケーションバンドル$15ってまあ微妙に高いっちゃ高いかも。MicrosoftからOffice365Soloを買えば月額1274円ですよ。うーん。</p>
+
+
+<p><!--EndFragment-->もし一人でパソコンを使うだけのためであれば、そりゃ自分で買ったパソコンにすべてをインストールしたほうが得な気がします。AWS Workspacesを使ってもそこに接続するためのパソコンは結局必要なわけだし、自分のパソコンで作業すれば$9.75毎月払わなくていいわけだし、Microsoft Officeだって安いし。</p>
+
+
+<p>しかし、もし自分が、例えば従業員が数十名の中小企業やNPO団体の管理部門の職員で、職員のパソコンの面倒を自分で全部見る役割だったらどうでしょうか？　新しい職員が就職するたびに、新しいパソコンを手配し、あるいは余っているパソコンをOSからOfficeから全部インストールし直し、職員が辞めたらそのデータを全部消して、パソコンの具合が悪いと言われたら全部面倒を見て。。。なんてことをやっていたら時間がいくらあっても足りないでしょう。もしAWS WorkSpacesを使えば、職員の皆さんには自分のパソコンを持ってこさせるか、パソコンを持っていない人にだけ支給をするかして、このブログで先月書いたのと同じ方法でひとりひとりにサクサクとアカウントを作ってあげればあとはおしまいです。そして誰かが退職したらそのアカウントを管理者として消してしまうだけです。情報漏洩とかの心配もだいぶ軽くなりそうです。そういう付帯業務を軽くするためだと思えば、毎月ひとり二十何ドルか課金されても全然安い気がしますね。</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>WorkSpaces（削除）</title>
+		<link>https://aws.morihiro.tokyo/archives/140</link>
+				<pubDate>Sat, 01 Jun 2019 16:45:40 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[Workspaces]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=140</guid>
+				<description><![CDATA[さて、先週WorkSpacesをつくってみましたが、「無料利用枠の対象」ではないものを選んでしまったので、お金 &#8230; <a href="https://aws.morihiro.tokyo/archives/140" class="more-link">続きを読む <span class="screen-reader-text">WorkSpaces（削除）</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>さて、先週WorkSpacesをつくってみましたが、「無料利用枠の対象」ではないものを選んでしまったので、お金がかかるといやなので、やっぱり消すことにしたいと思います。</p>
+
+
+
+<p>管理者コンソールに入ります。WorkSpacesが起動しています。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-61-1024x576.png" alt="" class="wp-image-141" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-61-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-61-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-61-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-61.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>試しに右クリックしてみます。「WorkSpacesの削除」というメニューがしっかり出てくるじゃありませんか。これをクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-62-1-1024x576.png" alt="" class="wp-image-143" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-62-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-62-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-62-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-62-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-63-1024x576.png" alt="" class="wp-image-144" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-63-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-63-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-63-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-63.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>要するに、きれいさっぱりパソコンを廃棄するのと同じ感覚ですね。全部消えるそうです。それでは「WorkSpacesの削除」を実行します。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-66-1024x576.png" alt="" class="wp-image-147" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-66-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-66-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-66-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-66.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ステータスが「AVAILABLE」から「TERMINATING」に変わりました。何か注意書きが緑の枠の中に出ていますね。「ディレクトリ」というのも消しておいたほうが良いようです。左端のメニューの「ディレクトリ」をクリックします。そして、「登録解除」して、そのあと「削除」と。」</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-67-1024x576.png" alt="" class="wp-image-148" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-67-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-67-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-67-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-67.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-68-1024x576.png" alt="" class="wp-image-149" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-68-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-68-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-68-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-68.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>とりあえずきれいに削除されたようです。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-69-1024x576.png" alt="" class="wp-image-150" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-69-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-69-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-69-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-69.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-71-1024x576.png" alt="" class="wp-image-152" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-71-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-71-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-71-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-71.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img alt=""/></figure>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>WorkSpaces（ユーザー設定）</title>
+		<link>https://aws.morihiro.tokyo/archives/119</link>
+				<pubDate>Sat, 25 May 2019 16:27:36 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[Workspaces]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=119</guid>
+				<description><![CDATA[前回は、管理者MorihiroさんがユーザーであるMorihiroさんのためにWorkSpaceを設定してあげ &#8230; <a href="https://aws.morihiro.tokyo/archives/119" class="more-link">続きを読む <span class="screen-reader-text">WorkSpaces（ユーザー設定）</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>前回は、管理者MorihiroさんがユーザーであるMorihiroさんのためにWorkSpaceを設定してあげる、という操作をやってみました。</p>
+
+
+
+<p>今回は、ユーザーであるMorihiroさんがそのWorkSpaceを使い始めるときに行う操作をやってみたいと思います。</p>
+
+
+
+<p>管理者Morihiroさんの設定が完了すると、ユーザーのMorihiroさんにメールが届いていました。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-35-1024x576.png" alt="" class="wp-image-120" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-35-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-35-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-35-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-35.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ここに書いてあるとおりに淡々とやるだけですね。まずはメールにかかれているリンクをクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-36-1024x576.png" alt="" class="wp-image-121" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-36-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-36-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-36-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-36.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ここでユーザー名とメールアドレスと入力して、初期パスワードを設定します。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-38-1024x576.png" alt="" class="wp-image-122" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-38-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-38-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-38-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-38.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>なんだかパスワードが設定できないなと思ってよく見たら、パスワードに利用する文字の条件を満たさないといけないみたいです。これを満たすパスワードを設定します。そして「ユーザーの更新」をクリックすると、こんな画面に行きます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-40-1024x576.png" alt="" class="wp-image-123" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-40-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-40-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-40-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-40.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-41-1024x576.png" alt="" class="wp-image-124" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-41-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-41-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-41-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-41.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>どうやらWindows用のクライアントソフトをダウンロードしてね、ということのようなので、「Windows Download」をクリックします。そしてソフトをダウンロードしてインストールします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-43-1024x576.png" alt="" class="wp-image-125" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-43-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-43-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-43-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-43.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-45-1024x576.png" alt="" class="wp-image-126" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-45-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-45-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-45-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-45.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>クライアントソフトをインストールしたら、自分のPCのデスクトップに、「Amazon　WorkSpaces」というショートカットができました。ここから、東京のどこかのAWSのセンターにつくった、私のパソコンに遠隔操作で接続できるということですね。早速、ショートカットをクリックして接続してみます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-46-1024x576.png" alt="" class="wp-image-127" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-46-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-46-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-46-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-46.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>クリックすると、こんな画面が。。。さっき送られてきたメールに書いてあった、登録コード(Registration Code）」を入れて「Register」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-47-1024x576.png" alt="" class="wp-image-128" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-47-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-47-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-47-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-47.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-51-2-1024x576.png" alt="" class="wp-image-131" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-51-2-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-51-2-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-51-2-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-51-2.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>多少時間がかかりましたが、自分のPC（外側の青い背景の画面）の中に、遠隔操作で東京のどこかのAWSのセンターにある私のAWS Workspacesの画面が見えるようになりました。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-53-1024x576.png" alt="" class="wp-image-132" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-53-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-53-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-53-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-53.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>今回はExcel, Powerpoint, Wordもちゃんと入っています！</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-54-1024x576.png" alt="" class="wp-image-134" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-54-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-54-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-54-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-54.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-55-1024x576.png" alt="" class="wp-image-135" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-55-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-55-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-55-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-55.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-56-1-1024x576.png" alt="" class="wp-image-136" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-56-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-56-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-56-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-56-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>試しにExcelを開いてみますが、ちゃんと開けます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-59-1024x576.png" alt="" class="wp-image-137" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-59-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-59-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-59-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-59.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-60-1024x576.png" alt="" class="wp-image-138" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-60-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-60-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-60-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-60.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>Workspaces（管理者設定）</title>
+		<link>https://aws.morihiro.tokyo/archives/93</link>
+				<pubDate>Sat, 18 May 2019 16:00:52 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[Workspaces]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=93</guid>
+				<description><![CDATA[それでは、前回予告通り、AWS Workspacesを申し込みしてみたいと思います。まずはここから、「エンドユ &#8230; <a href="https://aws.morihiro.tokyo/archives/93" class="more-link">続きを読む <span class="screen-reader-text">Workspaces（管理者設定）</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>それでは、前回予告通り、AWS Workspacesを申し込みしてみたいと思います。まずはここから、「エンドユーザーコンピューティング」の「Workspaces」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-1024x576.png" alt="" class="wp-image-96" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>そうしたらこんな表示が。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-1-2-1024x576.png" alt="" class="wp-image-98" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-1-2-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-1-2-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-1-2-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-1-2.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>そうですか、オハイオではこのサービスはやっていませんということですか。それなら、ちょうど「東京」というのがあるので、東京につくることにいたしましょう「アジアパシフィック（東京）」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-10-1024x576.png" alt="" class="wp-image-99" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-10-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-10-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-10-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-10.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><br></figcaption></figure>
+
+
+
+<p>「東京」を選択すると、こんな画面が出てきました。「今すぐ始める」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-12-1024x576.png" alt="" class="wp-image-100" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-12-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-12-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-12-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-12.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ここはよくわからないけれど、もう直感的に進むのみ。高速セットアップの「起動」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-13-1024x576.png" alt="" class="wp-image-101" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-13-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-13-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-13-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-13.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>これはパソコンの性能とOSなどを選ぶ場面ですね。ちゃんと英語か日本語かも選べるようになっていますね。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-14-1-1024x576.png" alt="" class="wp-image-106" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-14-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-14-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-14-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-14-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p></p>
+
+
+
+<p>今までは「無料利用枠の対象」でがんばってきましたが、MicrosoftOfficeとかがないと不便じゃないですか。なので、Microsoft Office付きを選択してみます。「無料利用枠の対象ではない可能性があります」という表示が出てきますが、ここはかまわず「Value with Windows 10 and Office 2016」を選択して「WorkSpacesの起動」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-17-1-1024x576.png" alt="" class="wp-image-109" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-17-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-17-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-17-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-17-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>そうすると下記のように、起動しました。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-18-2-1024x576.png" alt="" class="wp-image-111" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-18-2-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-18-2-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-18-2-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-18-2.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><br><br></figcaption></figure>
+
+
+
+<p>「WorkSpaceを起動中」の表示が出てきました。「WorkSpaceが使用可能になるまで最大20分かかることがあります。WorkSpaceへの接続手順がユーザーに送信されます。」と表示されています。今、右下に写っている時刻が８時３３分ですね。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-21-1024x576.png" alt="" class="wp-image-114" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-21-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-21-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-21-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-21.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>１７分経過しましたが、まだステータスが「PENDING」になっています。４月にやったEC2サービスはあっという間にできあがったのにこれはなかなか時間がかかりますね。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-32-1024x576.png" alt="" class="wp-image-115" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-32-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-32-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-32-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-32.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>２９分経過して９時２分、ステータスが「AVAILABLE」になりました。できあがりです。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-33-1024x576.png" alt="" class="wp-image-116" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-33-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-33-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-33-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-02-33.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>本日の投稿は、管理者として、ユーザーに対してパソコンWorkSpaceをつくってあげた、というイメージの操作でした。先程、自分をユーザーにして、自分のメールアドレスを登録したので、次回はユーザー側の初期作業を実施してみたいと思います。</p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

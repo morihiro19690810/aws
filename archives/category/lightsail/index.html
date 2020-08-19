@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="ja" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="https://aws.morihiro.tokyo/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="https://aws.morihiro.tokyo/wp-content/themes/twentyfifteen/js/html5.js"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Lightsail &#8211; 五十の手習い　趣味のAWS</title>
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com/' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="五十の手習い　趣味のAWS &raquo; フィード" href="https://aws.morihiro.tokyo/feed" />
+<link rel="alternate" type="application/rss+xml" title="五十の手習い　趣味のAWS &raquo; コメントフィード" href="https://aws.morihiro.tokyo/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="五十の手習い　趣味のAWS &raquo; Lightsail カテゴリーのフィード" href="https://aws.morihiro.tokyo/archives/category/lightsail/feed" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/aws.morihiro.tokyo\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.2.2"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='https://aws.morihiro.tokyo/wp-includes/css/dist/block-library/style.min.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='https://aws.morihiro.tokyo/wp-includes/css/dist/block-library/theme.min.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='https://aws.morihiro.tokyo/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='https://aws.morihiro.tokyo/wp-content/themes/twentyfifteen/style.css?ver=5.2.2' type='text/css' media='all' />
+<link rel='stylesheet' id='twentyfifteen-block-style-css'  href='https://aws.morihiro.tokyo/wp-content/themes/twentyfifteen/css/blocks.css?ver=20181230' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='https://aws.morihiro.tokyo/wp-content/themes/twentyfifteen/css/ie.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='https://aws.morihiro.tokyo/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141010' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='https://aws.morihiro.tokyo/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp'></script>
+<script type='text/javascript' src='https://aws.morihiro.tokyo/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<link rel='https://api.w.org/' href='https://aws.morihiro.tokyo/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://aws.morihiro.tokyo/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://aws.morihiro.tokyo/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.2.2" />
+</head>
+
+<body class="archive category category-lightsail category-3 wp-embed-responsive">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">コンテンツへスキップ</a>
+
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<p class="site-title"><a href="https://aws.morihiro.tokyo/" rel="home">五十の手習い　趣味のAWS</a></p>
+												<p class="site-description">ITを、楽しもう</p>
+										<button class="secondary-toggle">メニューとウィジェット</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+		
+		
+					<div id="widget-area" class="widget-area" role="complementary">
+						<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">最近の投稿</h2>		<ul>
+											<li>
+					<a href="https://aws.morihiro.tokyo/archives/271">そして五十の手習いへ</a>
+									</li>
+											<li>
+					<a href="https://aws.morihiro.tokyo/archives/261">住所をつけましょう（３）</a>
+									</li>
+											<li>
+					<a href="https://aws.morihiro.tokyo/archives/251">住所をつけましょう（２）</a>
+									</li>
+											<li>
+					<a href="https://aws.morihiro.tokyo/archives/236">住所をつけましょう（１）</a>
+									</li>
+											<li>
+					<a href="https://aws.morihiro.tokyo/archives/218">AWSでWebサイトを作る（５）</a>
+									</li>
+					</ul>
+		</aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">アーカイブ</h2>		<ul>
+				<li><a href='https://aws.morihiro.tokyo/archives/date/2019/08'>2019年8月</a></li>
+	<li><a href='https://aws.morihiro.tokyo/archives/date/2019/07'>2019年7月</a></li>
+	<li><a href='https://aws.morihiro.tokyo/archives/date/2019/06'>2019年6月</a></li>
+	<li><a href='https://aws.morihiro.tokyo/archives/date/2019/05'>2019年5月</a></li>
+	<li><a href='https://aws.morihiro.tokyo/archives/date/2019/04'>2019年4月</a></li>
+		</ul>
+			</aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">カテゴリー</h2>		<ul>
+				<li class="cat-item cat-item-2"><a href="https://aws.morihiro.tokyo/archives/category/ec2">EC2</a>
+</li>
+	<li class="cat-item cat-item-3 current-cat"><a href="https://aws.morihiro.tokyo/archives/category/lightsail">Lightsail</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="https://aws.morihiro.tokyo/archives/category/other">Other</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="https://aws.morihiro.tokyo/archives/category/route53">Route53</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="https://aws.morihiro.tokyo/archives/category/workspaces">Workspaces</a>
+</li>
+		</ul>
+			</aside>			</div><!-- .widget-area -->
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<section id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+			<header class="page-header">
+				<h1 class="page-title">カテゴリー: Lightsail</h1>			</header><!-- .page-header -->
+
+			
+<article id="post-218" class="post-218 post type-post status-publish format-standard hentry category-lightsail">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="https://aws.morihiro.tokyo/archives/218" rel="bookmark">AWSでWebサイトを作る（５）</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>先週の記事ではパスワードの探し方を調査しましたが、それに従って実際に探してみます。まず、AWS Lightsailの画面に戻って、自分が作ったインスタンスのアイコンの右上端をクリックして「管理」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-23-2-1024x576.png" alt="" class="wp-image-219" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-23-2-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-23-2-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-23-2-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-23-2.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>そうすると、下記のように「SSHを使用して接続」というオレンジ色のバナーが出てくるので、そこをクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-25-1024x576.png" alt="" class="wp-image-220" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-25-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-25-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-25-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-25.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>そうすると、下記のようにSSHで、先ほど作成したWordpressのサーバーに接続できてしまいました。こんな簡単に接続できてしまってセキュリティ的に大丈夫なの？と一瞬思いましたが、私は自分のAWSのアカウントにログインした状態から接続しているので、誰でも接続できるわけではないですね。なので大丈夫です。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-26-1-1024x576.png" alt="" class="wp-image-221" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-26-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-26-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-26-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-26-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ここで、パスワード取得のためのコマンド「cat bitnami_application_password」を入力します。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-29-1-1024x576.png" alt="" class="wp-image-223" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-29-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-29-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-29-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-29-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>すると、さくっとパスワードが表示されました！<br>（注：下記にはパスワードが見える画像がおいてありますが、このサーバー環境はこのブログが公開される時には既に消去済ですので、このパスワードを使っても何もできませんよ～）</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-30-1024x576.png" alt="" class="wp-image-224" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-30-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-30-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-30-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-30.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>上記のパスワードを使って、Wordpressの管理画面にログインします。<br>WordPressの管理画面は、Wordpressのトップ画面の下の方にある「Log In」から入ります（これは、AWSの知識ではなくてWordpressの知識ですが）</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-32-1024x576.png" alt="" class="wp-image-233" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-32-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-32-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-32-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-32.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>「Log in」をクリックすると、管理画面の入り口が出てきます。ここでさきほどのパスワードを入れると、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-33-1024x576.png" alt="" class="wp-image-227" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-33-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-33-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-33-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-33.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>WordPressの管理画面にたどり着きました。ここが出てくれば、あとはデザインの変更、記事の投稿、なんでも自由自在です。これで、AWS Lightsailで簡単にWordpressサイトを作成、更新することができるということが確認できました。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-35-1024x576.png" alt="" class="wp-image-228" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-35-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-35-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-35-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-35.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="https://aws.morihiro.tokyo/archives/218" rel="bookmark"><time class="entry-date published" datetime="2019-07-13T14:27:30+00:00">2019-07-13</time><time class="updated" datetime="2019-08-23T11:23:03+00:00">2019-08-23</time></a></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="https://aws.morihiro.tokyo/archives/category/lightsail" rel="category tag">Lightsail</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-218 -->
+
+<article id="post-200" class="post-200 post type-post status-publish format-standard hentry category-lightsail">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="https://aws.morihiro.tokyo/archives/200" rel="bookmark">AWSでWebサイトを作る（４）</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>さて、前回の続きで、WordpressのIDとパスワードはどうなっているのよ。。。という調査です。</p>
+
+
+
+<p>さて、いまいちど、先程のWordpressの画面をよーく見てみると。。。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-1-1024x576.png" alt="" class="wp-image-201" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>右下の隅がぺろんとめくれて、今まで私が使ってきたWordpressではい変なアイコンが見えています。試しにここをクリックしてみますと、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-18-1024x576.png" alt="" class="wp-image-202" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-18-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-18-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-18-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-18.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ちゃんと書いてあるじゃないですか。</p>
+
+
+
+<p>英語ですが、こんなことが書いてあります。<br><br>これはBitnamiによってつくられたWordpressのクラウドイメージです。<br>WordPressのデータへのアクセス方法<br>Username user<br>パスワード：最初に立ち上げたときにパスワードが生成されます。パスワードを取得するにはココに書かれた指示に従ってね。<br>とのことなので、「ココ」をクリックしてみると、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-19-1024x576.png" alt="" class="wp-image-203" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-19-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-19-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-19-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-19.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>「アプリケーションにログインするための資格情報の見つけ方」という画面が出てきました。更に下にスクロールしていくと、ご丁寧に操作方法をビデオで解説してくれています。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-20-1024x576.png" alt="" class="wp-image-204" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-20-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-20-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-20-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-20.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>では、ここでお勉強した操作方法に従ってログインする作業は、次回お送りしたいと思います。</p>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="https://aws.morihiro.tokyo/archives/200" rel="bookmark"><time class="entry-date published" datetime="2019-07-06T13:53:34+00:00">2019-07-06</time><time class="updated" datetime="2019-08-23T11:23:03+00:00">2019-08-23</time></a></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="https://aws.morihiro.tokyo/archives/category/lightsail" rel="category tag">Lightsail</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-200 -->
+
+<article id="post-194" class="post-194 post type-post status-publish format-standard hentry category-lightsail">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="https://aws.morihiro.tokyo/archives/194" rel="bookmark">AWSでWebサイトを作る（３）</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>前回は上記の「保留中」のところで終わりましたが、数十秒後に再読込してみたら、「実行中」に変わりました。あっという間です。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-14-1-1024x576.png" alt="" class="wp-image-197" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-14-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-14-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-14-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-14-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>さてできあがったらしいのは良いですが、出来上がったWordpressにどうやったら実際に触れるのでしょうか！？</p>
+
+
+
+<p>まず、Wordpressのアイコンをクリックしてみます。すると下記の画面が登場です。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-16-1024x576.png" alt="" class="wp-image-195" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-16-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-16-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-16-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-16.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><br></figcaption></figure>
+
+
+
+<p>右上を見てみると「パブリックIP 54.249.53.246」の文字が。ということで、ブラウザからこのIPアドレスにアクセスしてみると、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-1024x576.png" alt="" class="wp-image-198" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-17.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>はじめての方には？？かもしれませんが、これはWordpressソフトウエアの初期画面です。ということは。。。この３週間に渡りこのブログで紹介した設定作業（ブログでは３習慣ですが実時間は数分です）で、</p>
+
+
+
+<p>・Linuxサーバの作成<br>・PHP、MySQLのインストール<br>・Wordpressのインストール<br>・インターネットへの接続<br>・パブリックIPアドレスの取得</p>
+
+
+
+<p>などなどがさくっと終わったということで、確かに「数分でWordpressサイトを作成」は誇大広告ではないということが確認できました。</p>
+
+
+
+<p>が、ちょっとまって。。。</p>
+
+
+
+<p>WordPressにログインして、設定や記事投稿などをするためのIDとパスワードはどうなのよ。。。ということで、続きは次回また。</p>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="https://aws.morihiro.tokyo/archives/194" rel="bookmark"><time class="entry-date published" datetime="2019-06-29T13:38:50+00:00">2019-06-29</time><time class="updated" datetime="2019-08-23T11:23:03+00:00">2019-08-23</time></a></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="https://aws.morihiro.tokyo/archives/category/lightsail" rel="category tag">Lightsail</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-194 -->
+
+<article id="post-183" class="post-183 post type-post status-publish format-standard hentry category-lightsail">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="https://aws.morihiro.tokyo/archives/183" rel="bookmark">AWSでWebサイトをつくる（２）</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>では、「LightSail」を実際に触っていきたいと思います。</p>
+
+
+
+<p>まず、メニューから「LightSail」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-6-1024x576.png" alt="" class="wp-image-184" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-6-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-6-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-6-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-6.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>いきなり今まで見てきたAWSのサービスとはだいぶテイストの違うほんわかした感じの画面で「おはようございます」と来ましたね。真ん中にどーんと「インスタンスの作成」というボタンがあります。ここをクリックすると多分何かできるんじゃないかなあという直感のもとに、クリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-7-1024x576.png" alt="" class="wp-image-185" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-7-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-7-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-7-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-7.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-9-1024x576.png" alt="" class="wp-image-186" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-9-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-9-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-9-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-9.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>まず「インスタンスロケーション」というのが出てきました。<br>４月のEC2のときには、オハイオにつくったり、というか気がついたらオハイオに作られていたりシましたが、今度はわかり易すぎる国旗マークと共に、これから日本につくりますよ！と表示されています。オレンジ色の注釈をクリックすると変更もできるようですが、ここはあまり気にせず日本のままとします。<br>次に「インスタンスイメージの選択」というのが出てきます。いきなり「Wordpress」って出てきます。ということは、まさか自分でWordpressのインストールすらしなくて良いということなのでしょうか？それはだいぶらくちんですね。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-10-1024x576.png" alt="" class="wp-image-187" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-10-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-10-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-10-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-10.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>更に下にスクロールしていくと、なんか解説が書いてあります。Bitnamiという会社が、AWS上で最初からWordpressがインストールされた状態のパッケージを準備してくれているそうです。Bitnamiって何者。。。とちょっと寄り道して調べてみますと、</p>
+
+
+
+<p>Bitnami &#8211; Packaged Applications for any platform<br><a href="https://bitnami.com/">https://bitnami.com/</a></p>
+
+
+
+<p>VMWareがBitnamiを買収へ<br><a href="https://www.atmarkit.co.jp/ait/articles/1905/16/news067.html">https://www.atmarkit.co.jp/ait/articles/1905/16/news067.html</a></p>
+
+
+
+<p>AWSのようなクラウドサービスの上で、様々なオープンソースのソフトウエアを面倒な事前準備作業なしに簡単に使えるようにするパッケージを提供しているベンチャー企業、なんですね。初めて知りました。そして今知りましたが知った時には既にIT業界の超大物企業VMWare社が買収していました。</p>
+
+
+
+<p>ということで、Bitnamiさんのおかげで、本当に数分でWebサイトができそうな予感がしてまいりました。</p>
+
+
+
+<p>ということで、更に下にスクロールしていくと、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-11-1024x576.png" alt="" class="wp-image-188" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-11-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-11-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-11-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-11.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>一番小さいやつは、$3.50／月で、最初の１ヶ月は無料だそうです。私が超人気ブロガーなら大きいやつにしたほうが良いのかもしれませんが、今はそんなことはないのでこちらを選びます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-12-1024x576.png" alt="" class="wp-image-189" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-12-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-12-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-12-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-12.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><br></figcaption></figure>
+
+
+
+<p>「インスタンスの識別」は、要するに名前をつけるということのようです。上記には、「WordPress-512MB-Tokyo-1」というシステムが自動的に設定した無味乾燥な名前がついていますので、私の方でここに「Morihiro_Wordpress_1」名前をつけて、「インスタンスの作成」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-13-1024x576.png" alt="" class="wp-image-192" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-13-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-13-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-13-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-13.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>そうすると、お、なんかそれっぽいものができました。画面は「インスタンスの作成」ボタンを押してから数秒後のスクリーンショットですが、「保留中」の文字があります。まだつくっている途中なのでしょう。それでは、できあがりの結果は次回のお知らせということで、よろしくおねがいします。</p>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="https://aws.morihiro.tokyo/archives/183" rel="bookmark"><time class="entry-date published" datetime="2019-06-22T13:14:58+00:00">2019-06-22</time><time class="updated" datetime="2019-08-23T11:23:03+00:00">2019-08-23</time></a></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="https://aws.morihiro.tokyo/archives/category/lightsail" rel="category tag">Lightsail</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-183 -->
+
+<article id="post-175" class="post-175 post type-post status-publish format-standard hentry category-lightsail">
+	
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="https://aws.morihiro.tokyo/archives/175" rel="bookmark">AWSでWebサイトを作る</a></h2>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<p>「今までやっていたことをAWSでやってみる」の次なるチャレンジとして、「AWSでWebサイトを作る」をやってみたいと思います。</p>
+
+
+
+<p>こちらは私の趣味のWebサイトですが、要するにこれをAWSで作ってみよう、ということです。</p>
+
+
+
+<p>Morihiro Music<br>https://www.morihiromusic.com</p>
+
+
+
+<p>私が上記のサイトを作った時には、</p>
+
+
+
+<p>１．レンタルサーバー（このときは「さくらインターネット」）を契約する</p>
+
+
+
+<p>２．Wordpressのソフトをここから入手して、 <a href="https://ja.wordpress.org/download/">https://ja.wordpress.org/download/</a> <br>FTPでレンタルサーバーにファイルを送ってインストールする</p>
+
+
+
+<p>３．Wordpressの設定をして、いろんなコンテンツ（歌詞とか音声ファイルとか）とアップロードして公開する</p>
+
+
+
+<p>というような手順だったと記憶しています。</p>
+
+
+
+<p>AWSも今までのITサービスの技術や歴史の上に気づかれているものですので、おそらく似たようなやり方があるんだろう、と想像しながら調べてみることにしたいと思います。まずは、「AWS　Wordpress」でGoogle検索シてみると。。。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-1024x576.png" alt="" class="wp-image-176" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p></p>
+
+
+
+<p>上記の３番目に出てきた見出しが目に止まりました。<br>「Amazon Lightsail &#8211; ほんの数分でWordPressのサイトを開設」<br>ほんの数分、ですか？　私が前に自分のサイトを作成した時には、ほんの数分、ではなかったような気がしますが、これはまた何かサプライズがあるのでしょうか。。。この見出しのサイトは、URLを見ますとAWS公式サイトのようですので、ここに行ってみます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-2-1024x576.png" alt="" class="wp-image-178" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-2-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-2-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-2-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-2.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>「月額わずか3.50 USDから、Wordpressサイトを数分で起動できます。」とのことです。ちなみに私が今まで使っている「さくらのレンタルサーバー」は、「ライトプラン」が129円、私はこちらに入っていますがいろいろ制約があってWebサイトつくるのにもいろいろ調べて苦労しました。「スタンダードプラン」は月額515円ですが、そうするとAWSのサービスも細かいところはおいておくとしてもまあまあ似たような感じ。。。と勝手に想定して、やってみることにします。</p>
+
+
+
+<p>ではとにかく「LightSail」というのを使えばよいのね、ということで、AWSのサービスメニューから、「LightSail」を探します。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-5-1024x576.png" alt="" class="wp-image-181" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-5-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-5-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-5-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-5.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>一番最初のところ、４月に試した「EC2」のすぐ次に「LightSail」というのがあるのがわかります。これですね。それでは、来週はこの「LightSail」でWordpressのWebサイトが本当にできるのか、試してみたいと思います。</p>
+
+
+
+<p></p>
+	</div><!-- .entry-content -->
+
+	
+	<footer class="entry-footer">
+		<span class="posted-on"><span class="screen-reader-text">投稿日: </span><a href="https://aws.morihiro.tokyo/archives/175" rel="bookmark"><time class="entry-date published" datetime="2019-06-15T12:55:43+00:00">2019-06-15</time><time class="updated" datetime="2019-08-23T11:23:03+00:00">2019-08-23</time></a></span><span class="cat-links"><span class="screen-reader-text">カテゴリー </span><a href="https://aws.morihiro.tokyo/archives/category/lightsail" rel="category tag">Lightsail</a></span>			</footer><!-- .entry-footer -->
+
+</article><!-- #post-175 -->
+
+		</main><!-- .site-main -->
+	</section><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+									<a href="https://ja.wordpress.org/" class="imprint">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script type='text/javascript' src='https://aws.morihiro.tokyo/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141010'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">\u30b5\u30d6\u30e1\u30cb\u30e5\u30fc\u3092\u5c55\u958b<\/span>","collapse":"<span class=\"screen-reader-text\">\u30b5\u30d6\u30e1\u30cb\u30e5\u30fc\u3092\u9589\u3058\u308b<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://aws.morihiro.tokyo/wp-content/themes/twentyfifteen/js/functions.js?ver=20150330'></script>
+<script type='text/javascript' src='https://aws.morihiro.tokyo/wp-includes/js/wp-embed.min.js?ver=5.2.2'></script>
+
+</body>
+</html>

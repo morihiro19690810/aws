@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>EC2 &#8211; 五十の手習い　趣味のAWS</title>
+	<atom:link href="https://aws.morihiro.tokyo/archives/category/ec2/feed" rel="self" type="application/rss+xml" />
+	<link>https://aws.morihiro.tokyo/</link>
+	<description>ITを、楽しもう</description>
+	<lastBuildDate>Fri, 23 Aug 2019 11:23:03 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+	<item>
+		<title>AWSと関係ない！？</title>
+		<link>https://aws.morihiro.tokyo/archives/83</link>
+				<pubDate>Sun, 12 May 2019 13:20:56 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[EC2]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=83</guid>
+				<description><![CDATA[さてそれでは、前回セットアップしたWindowsをまず日本語化して、ネットにつなげるかどうかを試してみたいと思 &#8230; <a href="https://aws.morihiro.tokyo/archives/83" class="more-link">続きを読む <span class="screen-reader-text">AWSと関係ない！？</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>さてそれでは、前回セットアップしたWindowsをまず日本語化して、ネットにつなげるかどうかを試してみたいと思います。</p>
+
+
+
+<p>これが今の状態。英語のままですね。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-12-1024x794.png" alt="" class="wp-image-89" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-12-1024x794.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-12-300x233.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-12-768x596.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-12.png 1026w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>日本語化の前に、Windows　Updateをちゃんとしておきましょう。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-19-1024x794.png" alt="" class="wp-image-84" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-19-1024x794.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-19-300x233.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-19-768x596.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-19.png 1026w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-22-1024x794.png" alt="" class="wp-image-86" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-22-1024x794.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-22-300x233.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-22-768x596.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-22.png 1026w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>続いて日本語化します。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-28-1024x794.png" alt="" class="wp-image-87" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-28-1024x794.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-28-300x233.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-28-768x596.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-28.png 1026w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-33-1024x794.png" alt="" class="wp-image-88" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-33-1024x794.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-33-300x233.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-33-768x596.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-33.png 1026w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>めでたく日本語化できました。</p>
+
+
+
+<p></p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-17-1024x794.png" alt="" class="wp-image-90" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-17-1024x794.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-17-300x233.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-17-768x596.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-17.png 1026w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>ちゃんとGoogleのWebサイトも見えました。これでネット接続も完璧です。</p>
+
+
+
+<p></p>
+
+
+
+<p>ところで、今日の記事って、全くAWSと関係ないじゃないですか。「はじめてのAWS」のはずが「はじめてのWindows Server」になってしまっているじゃないですか。ブログの方向性を軌道修正しなくては。。。などと考えつつ、この１ヶ月の顛末を勤務先でお話していたら、隣の席のエンジニアさんから、「Morihiroさん、AWSでパソコンをやりたいんだったら、WorkSpacesでやるといいですよ！」とのコメントが。</p>
+
+
+
+<p>WorkSpace!?</p>
+
+
+
+<p><a href="https://aws.morihiro.tokyo/?p=37">「140個もあるこれは何！？」</a>の記事を読み返してみると、確かにあるじゃないですか、「エンドユーザーコンピューティング」の中に「WorkSpaces」というのが。ということで、次回は気を取り直して、こちらの「WorkSpaces」を使って、自分のパソコンと似たようなことをやってみる、という方向性に行ってみたいと思います。</p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>AWS上でWindowsセットアップ</title>
+		<link>https://aws.morihiro.tokyo/archives/78</link>
+				<pubDate>Sun, 05 May 2019 13:00:23 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[EC2]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=78</guid>
+				<description><![CDATA[前回はWindowsが起動したところまでご紹介しましたので本日はその続きを。 ところで、最初の記事を書き始めて &#8230; <a href="https://aws.morihiro.tokyo/archives/78" class="more-link">続きを読む <span class="screen-reader-text">AWS上でWindowsセットアップ</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>前回はWindowsが起動したところまでご紹介しましたので本日はその続きを。</p>
+
+
+
+<p>ところで、最初の記事を書き始めてから既に１ヶ月が経過していますが、最初の記事で書いた申込みからWindowsが起動するまでの作業時間は、実は３０分もかかっていないんです。調べ物をすること、記事を書くこと、それから画面のコピーを撮ったりその画像を加工したりすることに結構時間と手間がかかるので、１ヶ月に渡りご紹介してきましたが、AWSそのものの操作は驚くほど簡単で、パソコンしか触ったことがない、ITエンジニアでもなんでもない私でも抵抗感なくいじれるものでした。</p>
+
+
+
+<p>それでは、前回の続きとまいりましょう。まずは、ここに作ったコンピュータの仕様の確認です。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-15-1-1024x794.png" alt="" class="wp-image-81" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-15-1-1024x794.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-15-1-300x233.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-15-1-768x596.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-15-1.png 1026w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>さてここで気がついたことをいくつか。</p>
+
+
+
+<p>・そもそもなんで英語なんだよ。。。あとで日本語に直すことにします（これはWindowsの設定の問題で、AWSとはあまり関係ない話ですが）</p>
+
+
+
+<p>
+
+・Windows Updateがまだできていません。これもWindowsの設定の問題ですが、あとでやっておきます。
+
+</p>
+
+
+
+<p>・Ethernetのところを見ると、既にインターネットにつながっています。自宅にパソコンを導入するときには、ケーブルを引いて配線しなければなりませんがこれは既に配線された状態ができあがっていますね。さすがAWS。</p>
+
+
+
+<p>Intel Xeon のCPU（サーバー用の高いやつです。自分では買ったことありません）。1GBのメモリ（ちょっと小さすぎですが、最初に「無料利用枠」のものを選んだせいですね。お金をかければ大きくできる）、30GBのディスク（これも小さいですが「無料枠」なので仕方なし）、そしてWindows Server 2019 Datacenter （これ買ったら10万円以上するソフトですよ）の仕様のコンピュータが出来上がっています。</p>
+
+
+
+<p>1ヶ月前を振り返ると、AWSの「EC2」(Elastic Computing Cloud = 柔軟なコンピュータをクラウド上につくるサービス）というサービスを使ってこれをつくったわけですが、ちょうど、１：Windowsがプリインストールされたパソコンを買ってきて、２：配線して電源を入れて、というところまでをクラウド上でやってくれるのがEC2だということがわかりました。逆に、その先でやること（Windowsの設定とか、アプリをインストールするとか）を自分でやらなければならないところは、パソコンと同じですね。）これを業界用語で、IaaS (Infrastructure as a Service)というのです。</p>
+
+
+
+<p></p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>つながりましたよオハイオに</title>
+		<link>https://aws.morihiro.tokyo/archives/69</link>
+				<pubDate>Sun, 28 Apr 2019 14:58:30 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[EC2]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=69</guid>
+				<description><![CDATA[先週は「オハイオにある私のコンピュータどうやって使うのよ？」という疑問を提起して終了してしまいましたが、続きで &#8230; <a href="https://aws.morihiro.tokyo/archives/69" class="more-link">続きを読む <span class="screen-reader-text">つながりましたよオハイオに</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>先週は「オハイオにある私のコンピュータどうやって使うのよ？」という疑問を提起して終了してしまいましたが、続きです。</p>
+
+
+
+<p>遠くにあるパソコンを使う。。。といえば、そうです、遠隔操作です。遠くにあるパソコンの画面を自分のパソコンに映し出して、手元で操作できるんです。ニュースに出てくるような犯罪で使うのとは違いますよ。実家のお父さんのパソコンをメンテナンスしてあげるとかに使うんです。</p>
+
+
+
+<p></p>
+
+
+
+<p>きっとAWSでもこれができるんじゃないか、普通できるはずだよね。。。ということで、このオハイオで動いている私のt2.microちゃんを</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-26-1-1024x576.png" alt="" class="wp-image-71" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-26-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-26-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-26-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-26-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>右クリックしてみると、こんな表示が。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-27-1024x576.png" alt="" class="wp-image-72" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-27-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-27-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-27-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-27.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>一番上に「接続」って書いてあるじゃないですか。ここをクリックすると、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-28-1024x576.png" alt="" class="wp-image-73" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-28-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-28-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-28-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-28.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><br><br></figcaption></figure>
+
+
+
+<p>「リモートデスクトップファイルのダウンロード」ここで遠隔操作でAWS上のパソコンに接続するための設定が入ったファイルがダウンロードできるようになっています。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-29-1024x576.png" alt="" class="wp-image-74" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-29-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-29-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-29-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-04-06-29.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>自分のパソコンに遠隔接続用のファイルをダウンロードしました。</p>
+
+
+
+<p>これをクリックして、オハイオの私のコンピュータに接続を試みます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-2-1024x576.png" alt="" class="wp-image-75" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-2-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-2-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-2-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-2.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>おお、接続しに行っていますよ。。。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-4-1024x576.png" alt="" class="wp-image-76" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-4-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-4-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-4-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/05/2019-05-01-4.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p></p>
+
+
+
+<p>接続成功です！画面がわかりにくくて恐縮ですが、一番外側の枠が、私の手元にあるPCの画面で、その中に、オハイオにあるAWSのコンピュータの画面が写っています。ひとつ上の画像をご覧いただければわかると思いますが、私のPCの画面は、ブルー１色の画面ですが、オハイオのAWSのコンピュータはWindowsの初期設定の窓の画像になっていますね。</p>
+
+
+
+<p>さて来週は、このオハイオのAWSのコンピュータの上で、自宅のパソコンで普段やっていることを試しにやってみようと思います。</p>
+
+
+
+<p></p>
+
+
+
+<p><br></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>AWSでパソコンを作る！？</title>
+		<link>https://aws.morihiro.tokyo/archives/51</link>
+				<pubDate>Fri, 19 Apr 2019 22:35:39 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[EC2]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=51</guid>
+				<description><![CDATA[さて、先週宿題として宣言した「自分のパソコン（に似たもの）がAWSでつくれるかどうか、についてこれまた体当たり &#8230; <a href="https://aws.morihiro.tokyo/archives/51" class="more-link">続きを読む <span class="screen-reader-text">AWSでパソコンを作る！？</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>さて、先週宿題として宣言した「自分のパソコン（に似たもの）がAWSでつくれるかどうか、についてこれまた体当たりチャレンジしてみたいと思います。</p>
+
+
+
+<p>まずはここの画面から</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-10-3-1024x576.png" alt="" class="wp-image-52" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-10-3-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-10-3-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-10-3-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-10-3.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>１４０個もあるメニューのさてどこから？ですが、とりあえず一通り勉強しました。一番上に「コンピューティング」ってありますね、直訳すれば「コンピュータすること（！？）」ですかね。ここでしょう。</p>
+
+
+
+<p>そして一番上に「EC2」というのがあります。これは「Elastic Compute Cloud｣、直訳すれば「柔軟なコンピュータのクラウドサービス」、意訳すれば「コンピュータをクラウド上に、さっと作ったりさっと消したり、大きくしたり小さくしたり柔軟につくれます」という感じでしょうか。</p>
+
+
+
+<p>とりあえず、この「EC2」をクリックしてみます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-13-1024x576.png" alt="" class="wp-image-53" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-13-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-13-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-13-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-13.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /><figcaption><br></figcaption></figure>
+
+
+
+<p>「EC2」を押したらこんな画面が出てきました。いろいろありますが、目立つ青い色で「インスタンスの作成」というのがあります。その上には「インスタンスと呼ばれる仮想サーバーを作成します」とあります。「インスタンス！？ instance!?」英和辞書では「  例、実例、事例、実証、場合、事実、段階」とありますが、全然ピンときませんね。ここはIT用語で「インスタンスの作成」＝「クラウドの上にコンピュータを作成」というくらいの意味のようです。ということで、このボタンをクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-15-1024x576.png" alt="" class="wp-image-56" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-15-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-15-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-15-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-15.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>次はこんな画面が出てきました。「AMI」！？次々に襲いかかる３文字略語の嵐に動揺してはいけません。「AMIは、インスタンスの作成に必要なソフトウエア構成（OS,アプリケーションサーバー、アプリケーション）を含むテンプレートです。」とあります。ところで、今回は何をつくろうとしていたんでしたっけ？、そうです、自分の持っているパソコン（に近いもの）です。そうなると、「Windowsが動いているコンピュータ」ですね。今この画面に見えているのは「Linux」のようです。名前は聞いたことありますが触ったことないし今回はそれが目当てではないので、画面をスクロールして下に行きます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-17-1024x576.png" alt="" class="wp-image-57" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-17-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-17-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-17-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-17.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>お、出てきましたよWindows。しかも「無料利用枠の対象」って書いてあります。嬉しいですね。でも「Windows Server 2019」って書いてあります。私の自宅に持っているパソコンに入っているWindows 10ではありません。。。さてどう違うんでしょう。</p>
+
+
+
+<p><a href="http://tooljp.com/windows/chigai/html/Windows/clientos-vs-Serveros.html">http://tooljp.com/windows/chigai/html/Windows/clientos-vs-Serveros.html</a></p>
+
+
+
+<p>非常に簡単に言ってしまうとWindows ServerというのはパソコンのWindowsのより上位のソフトのようです。とりあえず無料なので、大は小を兼ねるのだろうと判断して、これを「選択」クリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-18-1024x576.png" alt="" class="wp-image-59" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-18-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-18-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-18-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-18.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>次はこんな画面が登場です。nano, micro,small,midium,largeなどと書いてあります。これは、どのくらい大きな（性能のよい）コンピュータをつくりたいか、という選択肢ですね。今は「無料」だけを理由に「t2.micro」を選んで「確認と作成」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-20-1024x576.png" alt="" class="wp-image-60" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-20-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-20-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-20-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-20.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>確認画面が出てきました。「起動」をクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-25-1024x576.png" alt="" class="wp-image-62" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-25-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-25-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-25-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-25.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>多少途中の確認画面等の説明を省略しましたが、何回かクリックすると、作成が始まりました。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-26-1-1024x576.png" alt="" class="wp-image-66" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-26-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-26-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-26-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/04/2019-04-06-26-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>そしてこの画面が登場しました。</p>
+
+
+
+<p>青い行が１行あります。先ほど行った一連の操作で、オハイオ（右上に地名が表示されていますね）のAmazon社のセンターの中に、私がいま注文したコンピュータが１台出来上がっていま動いている（緑色の丸と、「running」の文字が見えます）ということのようです。</p>
+
+
+
+<p>ブログの記事で書くと３週間に渡る長い記事となってしまいましたが、実は私が最初の記事（申し込み開始）からここに至るまで操作をしていた時間は、書かれていることの意味などを勉強していた時間を除きますと、約５分間。通販でコンピュータを買っても配達まで数字はかかりますが、５分でできました、というこのお手軽さ、がクラウドサービスの魅力、Elastic（柔軟な）という言葉の意味するところです。私は趣味で触っているから良いとしても、例えば、あなたが３０名くらい社員のいる会社の管理部門担当者で、みんなのパソコン調達して使えるようにしてあげてよ、なんて話になったら結構大変だと思いませんか。３０人分のパソコンを注文して、届いたら箱から出して電源つないで配線して。。。というところを楽にしてくれる可能性があるのがクラウドサービス、というようなざっくりしたイメージを持っていただくと良いのではと思います。</p>
+
+
+
+<p>しかし、チョット待って。。。オハイオにある私のコンピュータ、どうやって東京にいる私が使えというのでしょうか！？　それについてはまた来週ということで、引き続きよろしくお願い致します。</p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>

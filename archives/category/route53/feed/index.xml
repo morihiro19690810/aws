@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Route53 &#8211; 五十の手習い　趣味のAWS</title>
+	<atom:link href="https://aws.morihiro.tokyo/archives/category/route53/feed" rel="self" type="application/rss+xml" />
+	<link>https://aws.morihiro.tokyo/</link>
+	<description>ITを、楽しもう</description>
+	<lastBuildDate>Fri, 23 Aug 2019 11:23:03 +0000</lastBuildDate>
+	<language>ja</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.2.2</generator>
+	<item>
+		<title>住所をつけましょう（３）</title>
+		<link>https://aws.morihiro.tokyo/archives/261</link>
+				<pubDate>Sat, 03 Aug 2019 00:47:31 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[Route53]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=261</guid>
+				<description><![CDATA[さて、前回AWSのドメイン名の料金表までたどり着きましたが。。。 先々月、Wordspaceをつくってすぐ消し &#8230; <a href="https://aws.morihiro.tokyo/archives/261" class="more-link">続きを読む <span class="screen-reader-text">住所をつけましょう（３）</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>さて、前回AWSのドメイン名の料金表までたどり着きましたが。。。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-2-1024x576.png" alt="" class="wp-image-262" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-2-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-2-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-2-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-2.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>先々月、Wordspaceをつくってすぐ消したときに、20ドル以上課金されてへこんでしまいましたので、今度は慎重に料金表をチェックします。一番安い「uk」「de」などでも、年間9ドルしますね。「JP」とか90ドルもしますよ。ということで念の為、勤務先のエンジニアの皆さんに聞いてみましたところ、ドメイン名はAWSで取得しなくてももっと安く取得できるところで取得して、それをAWSで使うことができるそうです。ということで、方針転換して、ドメイン名は別の企業から取得することにします。</p>
+
+
+
+<p>ということで、いろいろ調べまして、「ムームードメイン」を使うことにしました。運営会社はGMOペパポ、GMOインターネット（東証一部上場）の子会社でJASDAQスタンダード上場企業(3633)です。</p>
+
+
+
+<p>ムームードメインのホームページに行くと、ドメイン名が空いているか（使えるか）検索できるようになっています。インターネット上の住所ですから、名前がかぶったら使えない、というのは実際の住所や駅名と考え方は同じですね。morihiro と入力して検索すると、morihiro.xxx のxxxで使える選択肢と、それを取得するための１年間のお値段が表示されます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-09-1-1024x576.png" alt="" class="wp-image-264" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-09-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-09-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-09-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-09-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>morihiro.jp 　2，840円ですね。AWSで９０ドルだったのと比べるとだいぶ安いですね。でも「取得できません」になっています。世界のどこかのMorihiroさんが既に使っているのでしょうか。ちょっと試しに、morihiro.jpとブラウザに打ち込んでみると、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-09-5-1024x576.png" alt="" class="wp-image-265"/></figure>
+
+
+
+<p>鹿児島県の「株式会社盛洋建設」様が既に取得されているようです。（すみません、AWSと全く関係ありません。ただの脱線です）</p>
+
+
+
+<p>ということで、ずーっと下の方を見ていきますと、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-09-2-1024x576.png" alt="" class="wp-image-266"/></figure>
+
+
+
+<p>morihiro.tokyo　というのが、199円で、しかも空いています。これを取得したいと思います。（ちなみに、この記事では記載割愛していますが、もし２年目以降もずっと使おうと考えている方は、２年目以降の更新料金もきちんとチェックしてから取得してください。１年目が安くて２年目からぐっと値上がりするというパターンもありますので）</p>
+
+
+
+<p>ということで、AWSと関係ない流れの話になっていますので詳細は割愛しますが、ここでユーザ登録して、クレジットカード登録して、めでたく</p>
+
+
+
+<p>morihiro.tokyo</p>
+
+
+
+<p>の住居表示が私のものとなりました。</p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>住所をつけましょう（２）</title>
+		<link>https://aws.morihiro.tokyo/archives/251</link>
+				<pubDate>Sat, 27 Jul 2019 00:17:24 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[Route53]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=251</guid>
+				<description><![CDATA[さて、前回の続きです。まず行うのは「緯度と経度しかない私のWebサイトに住所をつけること」です。これには １． &#8230; <a href="https://aws.morihiro.tokyo/archives/251" class="more-link">続きを読む <span class="screen-reader-text">住所をつけましょう（２）</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>さて、前回の続きです。まず行うのは「緯度と経度しかない私のWebサイトに住所をつけること」です。これには</p>
+
+
+
+<p>１．住所の名前を取得する（ドメイン名の取得）</p>
+
+
+
+<p>２．住所の名前と緯度経度を紐付ける（DNSへの登録）</p>
+
+
+
+<p>というふたつの手順があります。</p>
+
+
+
+<p>ということで、まずは住所の名前（ドメイン名）を取得することにします。</p>
+
+
+
+<p>google.com 　→ Googleの住所<br>amazon.com　→ Amazonの住所</p>
+
+
+
+<p>このようなやつを自分用に取得したい、ということですが、このようなドメイン名は、世界中で一元的に名前を管理している団体がありまして、</p>
+
+
+
+<p>ドメインって誰がどうやって管理しているの？<br><a href="https://xn--u8j7eobcu7j2kyg7f.jp/special/registrar/index.html">https://xn--u8j7eobcu7j2kyg7f.jp/special/registrar/index.html</a></p>
+
+
+
+<p>私たちはそこから委託された団体や企業を通じて、住所のお名前を借りる契約をむすぶことができるようになっています。</p>
+
+
+
+<p>などと偉そうに行っていますが、私は実は今まで使ったことがありませんので、今から調べてみたいと思います。まずは「aws dns」でGoogle検索してみると。。。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-38-1-1024x576.png" alt="" class="wp-image-252" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-38-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-38-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-38-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-38-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>一番上に、AWS公式ページ「Amazon Route 53 (スケーラブルなドメインネームシステム）」と出てきました。ちゃんとAWSでできそうですね。ということで、ココをクリックして行ってみます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-40-1024x576.png" alt="" class="wp-image-254" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-40-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-40-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-40-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-40.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>かっこいいAWS公式ホームページが出てきました。Amazon Route 53の「料金」のところをクリックしてみます。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-42-1-1024x576.png" alt="" class="wp-image-255" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-42-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-42-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-42-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-42-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>料金表の左端にあるメニューを見ると「ドメイン名」とあります。ここをクリックしますと、</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-43-1-1024x576.png" alt="" class="wp-image-256" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-43-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-43-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-43-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-43-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>オレンジ色のリンクで「TLD別の最新料金表」と書いてあるじゃありませんか。ココをクリックします。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-1-1024x576.png" alt="" class="wp-image-259" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-1-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-1-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-1-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-44-1.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>出てまいりました。TLD別（.comとか.netとか、名前の種類別）に料金がだいぶ違いますが、ここから申し込めば年間いくらで使えるようですね。</p>
+
+
+
+<p>それでは、続きはまた来週。。。</p>
+]]></content:encoded>
+										</item>
+		<item>
+		<title>住所をつけましょう（１）</title>
+		<link>https://aws.morihiro.tokyo/archives/236</link>
+				<pubDate>Sat, 20 Jul 2019 00:04:06 +0000</pubDate>
+		<dc:creator><![CDATA[morihiroaws]]></dc:creator>
+				<category><![CDATA[Route53]]></category>
+
+		<guid isPermaLink="false">https://aws.morihiro.tokyo/?p=236</guid>
+				<description><![CDATA[先週までで、LightsailとWordpressを使ってWebサイトを作るための初期設定が整いました。それか &#8230; <a href="https://aws.morihiro.tokyo/archives/236" class="more-link">続きを読む <span class="screen-reader-text">住所をつけましょう（１）</span></a>]]></description>
+								<content:encoded><![CDATA[
+<p>先週までで、LightsailとWordpressを使ってWebサイトを作るための初期設定が整いました。それからサイトのデザインを整えて、頑張って記事を書いて書いて書いて。。。とすると、こんなふうにWebサイトが出来上がります。</p>
+
+
+
+<figure class="wp-block-image"><img src="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-37-2-1024x576.png" alt="" class="wp-image-245" srcset="https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-37-2-1024x576.png 1024w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-37-2-300x169.png 300w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-37-2-768x432.png 768w, https://aws.morihiro.tokyo/wp-content/uploads/2019/06/2019-06-08-37-2.png 1366w" sizes="(max-width: 1024px) 100vw, 1024px" /></figure>
+
+
+
+<p>さて、どこかで見たようなサイトですね！？</p>
+
+
+
+<p>そうです、この記事が乗っているサイト「はじめてのAWS by Morihiro」です。実はこのサイトは４月から既にAWS上に作成されていました。。。というと自作自演と言われそうですが、いろいろ試行錯誤を繰り返した結果を後追いでこのブログでご報告しております関係上ご了承ください。</p>
+
+
+
+<p>さて、あらためて、上記のスクリーンショットと、今ご覧になっているこの実際のサイトを見比べて頂いて、まだなにか違いがあるのにお気づきでしょうか。。。</p>
+
+
+
+<p>上記のスクリーンショットでは、ブラウザのアドレスバーに「52.197.xxx.xxx」を表記されています。今ご覧になっているサイトは、ブラウザのアドレスバーに「morihiroaws.local」と表示されていると思います。<br></p>
+
+
+
+<p>これは、IPアドレスとDNSと言いまして、</p>
+
+
+
+<p>「IPアドレス」は、インターネット上のすべての場所を、数字の羅列で表現するもの、無理やり例えれば、地球上の位置を緯度と経度で表示するようなイメージです。それに対して、DNSとは、英語などの単語で場所を表記するもの、まさに地球上の住所の表記にようなものです。上記ののスクリーンショットは、私のこのWebサイトの緯度と経度を指定して見に来て頂いている状態、一方で、いまみなさんがご覧になっている「morihiroaws.local」は、住所を指定して見に来ていただいている状態です。（Google検索とかでこちらのページにいらっしゃった方もいるかもしれませんが、それは上記の例えで表現すれば、「Googleさんに私のサイトへの道順を聞いたら教えてくれたのでやって来た」という感じでしょう）</p>
+
+
+
+<p></p>
+
+
+
+<p>ということで、これから私は、</p>
+
+
+
+<p>１．緯度と経度しかついていない私のWebサイトに、住所をつける</p>
+
+
+
+<p>２．私のWebサイトの場所をGoogleさんに教えてあげる</p>
+
+
+
+<p>という２つの作業をやってみたいと思います。</p>
+
+
+
+<p>それでは続きはまた来週・・・</p>
+
+
+
+<p></p>
+]]></content:encoded>
+										</item>
+	</channel>
+</rss>
